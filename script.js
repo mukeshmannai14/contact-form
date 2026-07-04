@@ -59,8 +59,8 @@ function validatepassword() {
         return false;
     }
 
-    if (password.length < 9) {
-        passError.innerHTML = "Password must be at least 9 characters";
+    if (password.length < 8) {
+        passError.innerHTML = "Password must be at least 8 characters";
         return false;
     }
      if (!password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&.#])[A-Za-z\d@$!%*?&.#]{8,}$/)) {
